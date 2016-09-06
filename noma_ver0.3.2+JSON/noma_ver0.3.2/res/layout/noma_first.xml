@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstpage_bg_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firstpage_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="ntust.nwnc.noma.NomaMainActivity" >
+
+    <TextView
+        android:id="@+id/RouteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnFB"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/fb_icon" />
+
+        <TextView
+            android:id="@+id/RouteDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/google_icon" />
+
+        <TextView
+            android:id="@+id/txtPhotoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/btnTwitter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/twitter_icon" />
+    </LinearLayout>
+
+</LinearLayout>

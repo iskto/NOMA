@@ -1,0 +1,10 @@
+根據noma第0.3.1版，
+修改UserJSONData.java和StoreJSONData.java，
+在裡面加入StoreRating, UserRating 和StoreLoc的資料欄位，
+Rating(點擊率)可以藉由呼叫addJSONObjectRating(id)增加，一次加1
+
+特別注意一下，在執行noma前，要記得開啟json-server.exe(這執行檔是已經編譯過的node.js)，
+並根據自己電腦的IP，到UserJSONData.java和StoreJSONData.java修改url，
+開啟server後可以用瀏覽器貼上url的網址(例如http://192.168.0.103:26080/user/)，確定IP是否正確
+
+

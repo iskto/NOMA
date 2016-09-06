@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:state_pressed="true">
+        <layer-list>
+           <!-- first --> 
+            <item android:bottom="0dp" android:right="0dp">
+            	<shape android:shape="oval" >
+       	 			<solid android:color="#d63a33" />
+
+        			<size
+           				android:height="5dp"
+            			android:width="5dp" />
+                  
+                </shape></item>          
+ 			
+            <!-- second -->
+            <item android:bottom="0dp" android:right="0dp">
+    			<bitmap android:src="@drawable/gotop" />
+ 			</item>
+        </layer-list>
+    </item>
+    
+    <item>
+        <layer-list>
+            <!-- first -->
+            <item android:left="3dp" android:top="3dp">
+                <shape android:shape="oval" >
+       	 			<solid android:color="#66000000" />
+        			<size
+           				android:height="5dp"
+            			android:width="5dp" />
+                </shape></item>
+            <!-- second --> 
+            <item android:bottom="3dp" android:right="3dp">
+            	<shape android:shape="oval" >
+       	 			<solid android:color="#d63a33" />
+
+        			<size
+           				android:height="5dp"
+            			android:width="5dp" />
+                  
+                </shape></item>          
+ 			
+            <!-- third -->
+            <item android:bottom="3dp" android:right="3dp">>
+    			<bitmap android:src="@drawable/gotop" />
+ 			</item>
+            
+        </layer-list></item>
+</selector>
+

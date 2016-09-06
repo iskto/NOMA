@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_horizontal_margin" >
+
+    <ImageView
+        android:id="@+id/us_img"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/alarm" />
+
+    <ToggleButton
+        android:id="@+id/tbAlarm"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:background="@drawable/toggle_me"
+        android:textOff="@string/clear"
+        android:textOn="@string/clear" />
+
+     <LinearLayout  
+        android:layout_width="wrap_content"  
+        android:layout_height="240dp"  
+        android:layout_weight="3"
+        android:gravity="center_horizontal" 
+        android:orientation="horizontal"
+        android:paddingBottom="40dip"  
+        android:paddingLeft="3.0dip" >  
+  
+        <ntust.nwnc.homepage.CustomNumberPicker 
+            android:id="@+id/np_date"  
+            android:layout_width="120.0dip"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:button="@null" />
+ 
+        <ntust.nwnc.homepage.CustomNumberPicker  
+            android:id="@+id/np_hour"  
+            android:layout_width="50.0dip"  
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center" 
+            android:textStyle="bold"
+            
+            android:layout_marginLeft="5.0dip" />  
+  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center"  
+            android:text=":"  
+            android:textSize="20.0sp" />  
+  
+        <ntust.nwnc.homepage.CustomNumberPicker  
+            android:id="@+id/np_minute"  
+            android:layout_width="50.0dip"  
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center"
+            android:textStyle="bold" />  
+    </LinearLayout>  
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@color/NomaBlue"
+        android:text="Done"
+        android:textColor="@color/White"
+        android:textSize="30dp" />
+
+</LinearLayout>
